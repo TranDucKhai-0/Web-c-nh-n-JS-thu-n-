@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web của Khải</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header: tên + ảnh -->
+  <div class="header">
+    <h1>Trần Đức Khải</h1>
+    <!-- Đặt ảnh của bạn vào ./assets/, tên file giữ nguyên như dự án -->
+    <img src="./assets/z3831389084196_46995febf9415deb3cd72dad528c98eb.jpg" alt="Hình người đẹp" />
+  </div>
+
+  <!-- Thời tiết -->
+  <div class="app_weather">
+    <h1>🌤️ Dự báo thời tiết TP.HCM</h1>
+
+    <div id="current-weather" class="weather-box">
+      <!-- JS sẽ nhét dữ liệu hiện tại vào đây -->
+      <p>Đang tải dữ liệu thời tiết...</p>
+    </div>
+
+    <h2>📅 Dự báo 7 ngày</h2>
+    <div id="forecast" class="forecast">
+      <!-- JS sẽ render các thẻ .day vào đây -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

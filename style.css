@@ -1,0 +1,64 @@
+/* Nền và font (đặt Nen.jpg cùng thư mục với file này hoặc chỉnh lại đường dẫn) */
+body{
+  background-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  background-image: url("./assets/Nen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Header: tên + ảnh ngang hàng */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;            /* có thể tăng nếu muốn cách xa hơn */
+  padding: 20px 30px;
+}
+.header h1{
+  color: rgb(227, 33, 7);
+  font-size: 60px;
+  margin: 0;
+}
+.header img{
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Khu vực thời tiết */
+.app_weather{
+  text-align: left;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+.app_weather h1,
+.app_weather h2{ color: aqua; margin: 10px 0; }
+
+.weather-box{
+  display: inline-block;
+  background: #e0f7fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+/* Lưới dự báo */
+.forecast{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.day{
+  background: #fff3e0;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+  min-width: 160px;
+}
